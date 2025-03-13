@@ -76,6 +76,11 @@ sudo systemctl restart nginx
 
 if folder dosenot exists create it 
 
+start server 
+
+cd /var/www/bot1001.ecomtgbot.tech
+pm2 start server/server.mjs --name angular-ssr
+
 11. Reload NGNIX
 
 sudo systemctl reload nginx
